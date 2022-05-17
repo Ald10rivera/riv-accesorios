@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(238, 239, 240);
+}
+section{
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+}
+section h1{
+    font-size: 80px;
+}
+section h1{
+    animation-duration: 5s;
+    animation-name: salir;
+    animation-iteration-count: 1;
+}
+@keyframes salir{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+section p{
+    margin: 2rem;
+    font-family: 'Anton', sans-serif;
+}
+
+nav ul{
+    font-family:  'Anton', sans-serif;
+    background-color: #1C6999;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+.menu ul li{
+    display: inline-block;
+    color: whitesmoke;
+    font-size: 25px;
+    margin: 10px;
+    position: relative;
+}
+.menu ul ul{
+    display: none;
+    position: absolute;
+    color: whitesmoke;
+}
+.sub-menu{
+    background-color: #1C6999;
+    padding: 10px;
+}
+.menu ul li:hover{
+    background-color:#0f6499; 
+    margin: 10px;
+}
+.menu ul li:hover > ul{
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.principal{
+    margin: 2rem;
+}
+.principal p{
+    font-family:  'Anton', sans-serif;
+    padding: 10px;
+}
+img{
+    height: 300px;
+    width: 600px;
+    border: solid 3px;
+    border-color: #2a6991;
+}
+
+.principal{
+    display:grid;
+    grid-template-areas:"div1 div2"
+                        "div3 div4";
+    justify-content: center;
+    gap:25px;
+}
+.div1{
+    grid-area: div1;
+    text-align: center;
+}
+.div2{
+    grid-area: div2;
+    text-align: center;
+}
+.div3{
+    grid-area: div3;
+    text-align: center;
+}
+.div4{
+    grid-area: div4;
+    text-align: center;
+}
+.principal div:hover{
+    background-color: #1C6999;
+    transition: background-color 1s;
+    transform: scale(1.1);
+    color:whitesmoke
+}
+
+footer{
+    background-color:#1C6999;
+    padding: 15px;
+    display:flex;
+    justify-content: center;
+}
+footer p{
+    color: whitesmoke;
+}
+
+main h1{
+    text-align: center;
+    font-family:'Anton', sans-serif;
+    margin: 1rem;
+    font-size: 80px;
+}
+.catalogo {
+    display: grid;
+    grid-template-areas: "img1 img2 img3"
+                        "img4 img5 img6"
+                        "img7 img8 img9"
+                        "img10 img11 img12"
+                        "img13 img14 img15";
+    justify-content: center;
+    gap: 25px;
+    margin:20px
+}
+.img1{
+    grid-area: img1;
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+}
+.img5{
+    grid-area: img5;
+}
+.img6{
+    grid-area: img6;
+}
+.img7{
+    grid-area: img7;
+}
+.img8{
+    grid-area: img8;
+}
+.img9{
+    grid-area: img9;
+}
+.img10{
+    grid-area: img10;
+}
+.img11{
+    grid-area: img11;
+}
+.img12{
+    grid-area: img12;
+}
+.img13{
+    grid-area: img13;
+}.img14{
+    grid-area: img14;
+}
+.img15{
+    grid-area: img15;
+}
+
+.riv img{
+    width:1300px;
+    height: 500px;
+    margin-left: 300px;
+}
+.nosotros{
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 30px;
+    font-family:'Anton', sans-serif ;
+}
+
+.redes{
+    width: 5%;
+    height: 5%;
+    margin-top: 15px;
+}
+.formulario{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+@media  screen and (max-width: 500px) {
+    section h1{
+        font-size: 2rem;
+    }
+    section h2{
+        font-size: 20px;
+    }
+    section p{
+        margin: 1.5rem;
+        font-size: 1rem;
+    }
+    .menu ul li{
+        font-size: 16px;
+    }
+    img{
+        height: 200px;
+        width: 300px;
+    }
+    .principal{
+        display:grid;
+        grid-template-areas:"div1 div1"
+                            "div2 div2"
+                            "div3 div3"
+                            "div4 div4";
+        justify-content: center;
+        gap:15px;
+    }
+    main h1{
+        font-size: 2rem;
+    }
+    .catalogo img{
+        height: 150px;
+        width: 190px;
+    }
+    .catalogo{
+        display: grid;
+        grid-template-areas:"img1 img2"
+                            "img3 img4" 
+                            "img5 img6" 
+                            "img7 img8" 
+                            "img9 img10" 
+                            "img11 img12"
+                            "img13 img14" 
+                            "img15 img15";
+    }
+    .riv img{
+        margin: 10px;
+        height: 250px;
+        width: 435px;
+    }
+    .nosotros{
+        font-size: 1rem;
+        margin-top: 0px;
+    }
+    .redes{
+        width: 15%;
+        height: 15%;
+    }
+    .formulario{
+        margin-top:15px;
+        margin-bottom: 20px;
+    }
+}
