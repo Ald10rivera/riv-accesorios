@@ -27,6 +27,18 @@ section h1{
         opacity: 1;
     }
 }
+.edicion-carusel{
+    background-color: #1C6999;
+    color:whitesmoke;
+}
+.carousel-item{
+    height: 700px;
+}
+.carusel-img{
+    height: 90%;
+    width: 100%;
+
+}
 section p{
     margin: 2rem;
     font-family: 'Anton', sans-serif;
@@ -183,11 +195,30 @@ main h1{
 .img15{
     grid-area: img15;
 }
-
-.riv img{
-    width:1300px;
-    height: 500px;
-    margin-left: 300px;
+.nav-background{
+    background-color:#1C6999;
+}
+.nav-link{
+    color: aliceblue;
+}
+.container{
+    background-color: #d3d3d3;
+    box-shadow: 12px -5px 22px 8px rgba(10,4,4,0.75);
+    -webkit-box-shadow: 12px -5px 22px 8px rgba(10,4,4,0.75);
+    -moz-box-shadow: 12px -5px 22px 8px rgba(10,4,4,0.75);
+}
+.container{
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+}
+@keyframes aparecer{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .nosotros{
     font-size: 1.2rem;
@@ -224,6 +255,9 @@ main h1{
         height: 200px;
         width: 300px;
     }
+    .carousel-item{
+        height: 350px;
+    }
     .principal{
         display:grid;
         grid-template-areas:"div1 div1"
@@ -252,9 +286,9 @@ main h1{
                             "img15 img15";
     }
     .riv img{
-        margin: 10px;
+        margin-bottom: 2rem;
         height: 250px;
-        width: 435px;
+        width: 100%;
     }
     .nosotros{
         font-size: 1rem;

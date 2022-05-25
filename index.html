@@ -7,75 +7,106 @@
     <enlace rel="preconectar" href="https://fonts.googleapis.com">
     <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
     <enlace href="https: //fonts.googleapis.com/css2? family= Adamina & familia = Antón & display=swap" rel="hoja de estilo">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Riv Accesorios</title>
 </head>
 <body>
-    <header>
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <li>
-                    <a href="./pages/servicios.html">Servicios</a>
-                    <ul class="sub-menu">
-                        <li>Taller</li>
-                        <li>Logistica</li>
-                        <li>Envios</li>
-                    </ul>
-                </li>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <h1>Bienvenido</h1>
-        <h2>
+    <div class="container-fluid">
+        <header class="row">
+            <nav class="navbar navbar-expand-lg nav-background col-12">
+                <div class="container-fluid">
+                    <a class="navbar-brand col-4" href="index.html">Riv Accesorios</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse col-8" id="navbarSupportedContent">
+                        <ul class="navbar-nav text-center d-flex-justify-content-evenly">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+            </nav>
+        </header>
+        <section class="row">
+            <h1 class="col-12">Bienvenido</h1>
+            <h2>
             Distribuidor de autopartes y accesorios de vehiculos para todas las marcas
-        </h2>
-        <p>
+            </h2>
+            <p>
             Empresa nacida en el norte del pais especializada en la venta y distribucion de repuestos, recambios y accesorios para tu automovil de cualquier marca.
             a conticuancion una presentacion de nuestra amplia gamas de servivicios y productos que usted necesite para su vehiculo a precios muy competitivos.
-        </p>
-    </section> 
-    <main class="principal">      
-        <div class="div1">
-            <img src="./img/rivac.png" alt="logo de la marca">
-            <p>
-                <b>TIENDA</b>
             </p>
-            <p>a demas del local comercial ubicado en la provincia de JUJUY, nos vimos en la necesidad de crear una tienda online para asi  lograr alcanzar a mas clientes y socios de todo el pais</p>
-        </div>   
-        
-        <div class="div2">
-            <img src="./img/lonuevo.jpg" alt="lo nuevo">
-            <p>
-                <b>LO NUEVO</b>
-            </p>
-            <p>la empresa, a pedido del publico y viendo la necesidad de un taller para realizar los recambios con total confianza y garantia. con ubicacion centrica y muy facil de llegar. trajimos RIV TALLER.</p>
-        </div>
-
-        <div class="div3">
-            <img src="./img/marcas.jpg" alt="marcas">
-            <p>
-                <b>MARCAS</b>
-            </p>
-            <p>desde hace mas de 5 años trabajamos con todas las marcas, con productos originales y marcas alternativas de primera calidad, somos principales promotores de la industria nacional.</p>
-        </div>
-        
-        <div class="div4">
-            <img src="./img/ofertas.jpg" alt="ofertas">
-            <p>
-                <b>PROMOCIONES</b>
-            </p>
-            <p>Una vez por mes lanzamos el dia de promociones con descuentos de hasta el 15% de descunto en tienda online y tienda fisica, tanto en accesorios y piezas mecanicas de recambio en todas las marcas.</p>
-        </div> 
-    </main>
-
-    <footer>
-        <p>&copy; Copyright 2022 Todos los derechos reservados <b>Riv Accesorios</b></p>
-    </footer>
+        </section> 
+        <main class="row">    
+            <div id="carouselExampleDark" class="carousel carousel-dark slide col-12 w-sm-100 carusel-mq" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner container-fluid mb-5">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./img/rivac.png" class="carusel-img" alt="logo de la marca">
+                    <div class="carousel-caption d-none d-md-block edicion-carusel">
+                        <h3>TIENDA</h3>
+                        <p>a demas del local comercial ubicado en la provincia de JUJUY, nos vimos en la necesidad de crear una tienda online para asi  lograr alcanzar a mas clientes y socios de todo el pais</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./img/marcas.jpg" class="carusel-img" alt="marcas">
+                    <div class="carousel-caption d-none d-md-block edicion-carusel">
+                        <h3>MARCAS</h3>
+                        <p>desde hace mas de 5 años trabajamos con todas las marcas, con productos originales y marcas alternativas de primera calidad, somos principales promotores de la industria nacional.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/lonuevo.jpg" class="carusel-img" alt="lo nuevo">
+                    <div class="carousel-caption d-none d-md-block edicion-carusel">
+                        <h4>LO NUEVO</h4>
+                        <p>la empresa, a pedido del publico y viendo la necesidad de un taller para realizar los recambios con total confianza y garantia. con ubicacion centrica y muy facil de llegar. trajimos RIV TALLER.</p>
+                    </div>
+                </div>
+                    <div class="carousel-item">
+                        <img src="./img/ofertas.jpg" class="carusel-img" alt="promociones">
+                        <div class="carousel-caption d-none d-md-block edicion-carusel">
+                            <h4>PROMOCIONES</h4>
+                            <p>Una vez por mes lanzamos el dia de promociones con descuentos de hasta el 15% de descunto en tienda online y tienda fisica, tanto en accesorios y piezas mecanicas de    recambio en todas las marcas.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div> 
+        </main>
+        <footer class="row">
+            <p class="text-center col-12">&copy; Copyright 2022 Todos los derechos reservados <b>Riv Accesorios</b></p>
+        </footer>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 </body>
 </html>
